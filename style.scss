@@ -1,0 +1,164 @@
+.nio-banner{
+    display: flex;
+    // padding: 0px 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    background: var(--Functional-Pure-White, #FFF);
+
+    width: 100%;
+
+    &__content{
+
+        display: flex;
+        // width: 1320px;
+        width: 100%;
+        max-width: 1320px;
+        padding: 40px 0px 60px 0px;
+        align-items: center;
+
+        margin: 0 auto;
+
+        &__txt{
+            display: flex;
+            width: 567px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+
+            &__titles{
+                display: flex;
+                width: 567px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+
+                svg{
+                    width: 67px;
+                    height: 22.694px;
+                    aspect-ratio: 67.00/22.69;
+                }
+                h2{
+                    color: var(--brand-primary-primary-midaccent, #00A300);
+
+                    /* H3 Headline/Bold */
+                    font-family: "Simplon BP";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%; /* 40px */
+                }
+            }
+            p{
+
+                color: var(--Functional-Neutral-Darkest, #1F1F1F);
+
+                /* Paragraph/Regular */
+                font-family: "Simplon BP";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+
+                max-width: 481px;
+            }
+        }
+
+        &__card{
+            display: flex;
+            width: 759px;
+            padding: 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+
+            border-radius: 34px;
+            background: var(--funcional-success-success-darkest, #0E2F16);
+
+            h2{
+                color: var(--color-grey-96, #F5F5F5);
+                font-family: "Simplon BP";
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 125%; /* 50px */
+
+                flex: 1 0 0;
+
+                b{
+                    color: var(--color-spring-green-46, #06E775);
+                    font-family: "Simplon BP";
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+                }
+
+            }
+            &__btns{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+
+                a:first-child{
+                    text-decoration: none;
+                    display: flex;
+                    height: 48px;
+                    padding: 8px 32px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+
+                    border-radius: 999px;
+                    border: 1px solid var(--brand-primary-primary-light, #70FF84);
+
+                    svg{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    span{
+                        color: var(--brand-primary-primary-light, #70FF84);
+                        text-align: center;
+
+                        /* Callout/Medium */
+                        font-family: "Simplon BP";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140%; /* 19.6px */
+                    }
+                }
+                a:last-child{
+                    text-decoration: none;
+
+                    display: flex;
+                    height: 48px;
+                    padding: 8px 28px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    align-self: stretch;
+
+                    border-radius: 999px;
+                    background: var(--Main-brand-Primary-Light, #70FF84);
+
+                    span{
+                        color: var(--Functional-Neutral-Darkest, #1F1F1F);
+                        text-align: center;
+                        font-family: "Simplon BP";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 24px */
+                    }
+                    svg{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
