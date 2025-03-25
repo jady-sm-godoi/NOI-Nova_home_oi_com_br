@@ -4,7 +4,20 @@
   align-items: flex-start;
   gap: 10px;
   background: var(--Functional-Pure-White, #FFF);
+  padding-inline: 36px;
   width: 100%;
+}
+@media screen and (max-width: 1124px) {
+  .nio-banner {
+    padding: 0px 36px;
+    gap: 10px;
+    align-self: stretch;
+  }
+}
+@media screen and (max-width: 620px) {
+  .nio-banner {
+    padding: 32px 24px;
+  }
 }
 .nio-banner__content {
   display: flex;
@@ -14,16 +27,27 @@
   align-items: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 1124px) {
+  .nio-banner__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+  }
+}
 .nio-banner__content__txt {
   display: flex;
-  width: 567px;
+  max-width: 567px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
 .nio-banner__content__txt__titles {
   display: flex;
-  width: 567px;
+  max-width: 567px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -42,6 +66,9 @@
   font-weight: 700;
   line-height: 125%; /* 40px */
 }
+body.dark .nio-banner__content__txt__titles h2 {
+  color: #000;
+}
 .nio-banner__content__txt p {
   color: var(--Functional-Neutral-Darkest, #1F1F1F);
   /* Paragraph/Regular */
@@ -54,13 +81,23 @@
 }
 .nio-banner__content__card {
   display: flex;
-  width: 759px;
+  max-width: 759px;
+  width: 100%;
   padding: 32px;
   justify-content: center;
   align-items: center;
   gap: 32px;
   border-radius: 34px;
   background: var(--funcional-success-success-darkest, #0E2F16);
+}
+body.dark .nio-banner__content__card {
+  background: #1f1f1f;
+}
+@media screen and (max-width: 620px) {
+  .nio-banner__content__card {
+    flex-direction: column;
+    padding: 32px 10px;
+  }
 }
 .nio-banner__content__card h2 {
   color: var(--color-grey-96, #F5F5F5);
@@ -71,6 +108,11 @@
   line-height: 125%; /* 50px */
   flex: 1 0 0;
 }
+@media screen and (max-width: 1124px) {
+  .nio-banner__content__card h2 {
+    font-size: 32px;
+  }
+}
 .nio-banner__content__card h2 b {
   color: var(--color-spring-green-46, #06E775);
   font-family: "Simplon BP";
@@ -79,11 +121,22 @@
   font-weight: 700;
   line-height: 125%;
 }
+@media screen and (max-width: 1124px) {
+  .nio-banner__content__card h2 b {
+    font-size: 32px;
+    white-space: nowrap;
+  }
+}
 .nio-banner__content__card__btns {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+}
+@media screen and (max-width: 620px) {
+  .nio-banner__content__card__btns {
+    width: 100%;
+  }
 }
 .nio-banner__content__card__btns a:first-child {
   text-decoration: none;
@@ -95,6 +148,11 @@
   gap: 8px;
   border-radius: 999px;
   border: 1px solid var(--brand-primary-primary-light, #70FF84);
+}
+@media screen and (max-width: 620px) {
+  .nio-banner__content__card__btns a:first-child {
+    width: 100%;
+  }
 }
 .nio-banner__content__card__btns a:first-child svg {
   width: 24px;
