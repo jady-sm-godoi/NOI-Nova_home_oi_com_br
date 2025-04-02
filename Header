@@ -4,7 +4,9 @@ Trocar imagens no Lumis, conforme o figma.
 Revisar os links pendentes
 ________________________
 
-<style type="text/css">.newHeader__menuWidthContainer::-webkit-scrollbar {
+<style type="text/css">
+
+.newHeader__menuWidthContainer::-webkit-scrollbar {
 	display: none !important;
 	width: 0 !important;
 	height: 0 !important;
